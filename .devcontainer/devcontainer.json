@@ -1,0 +1,32 @@
+{
+	"name": "",
+	"dockerComposeFile": [
+		"docker-compose.yaml"
+	],
+	"service": "ui",
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"upgradePackages": false
+		},
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+	"shutdownAction": "stopCompose",
+	"forwardPorts": [],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mhutchie.git-graph",
+				"eamodio.gitlens"
+			],
+			"settings": {
+				"files.exclude": {
+					"**/.vscode/filestore": true,
+					"**/.next": true,
+					"**/node_modules": true,
+					"**/.pnpm-store": true
+				}
+			}
+		}
+	}
+}
